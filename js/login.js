@@ -6,7 +6,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     var password = document.getElementById('password').value;
 
     // Simulação de validação (substituir por autenticação no MongoDB Atlas)
-    if (username === 'admin' && password === 'admin') {
+    if (username === 'rodrigosilvapmp' && password === 'hpPbWKsBX4gPe8tU') {
         // Se as credenciais estiverem corretas, redirecione para a página index.html
         window.location.href = 'index.html';
     } else {
