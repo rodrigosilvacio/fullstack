@@ -1,15 +1,36 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <title>Minha Primeira Aplicação</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facens Play - Login</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
-
 <body>
-
-    <h1>Hello World</h1>
-
+    <div class="login-container">
+        <h1>Facens Play - Login</h1>
+        <form id="login-form">
+            <table>
+                <tr>
+                    <td>Digite o seu usuário:</td>
+                    <td><input type="text" id="username" required></td>
+                </tr>
+                <tr>
+                    <td>Digite a sua senha:</td>
+                    <td><input type="password" id="password" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" id="login-button">Login</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <a href="#" id="signup-link">Caso não tenha um acesso, clique aqui</a>
+                    </td>
+                </tr>
+            </table>
+            <p id="error-message" class="error-message"></p>
+        </form>
+    </div>
+    <script src="js/login.js"></script>
 </body>
-
 </html>
