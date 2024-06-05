@@ -1,4 +1,4 @@
-const { createUser } = require('./database');
+const database = require('./database');
 
 document.getElementById('login-form').addEventListener('submit', async function(event) {
     event.preventDefault(); // Evita o envio do formulário
@@ -9,7 +9,7 @@ document.getElementById('login-form').addEventListener('submit', async function(
 
     try {
         // Crie um novo usuário no banco de dados
-        const user = await createUser(username, password);
+        const user = await database.createUser(username, password);
         document.getElementById('error-message').innerText = 'Usuário criado com sucesso!';
     } catch (error) {
         // Se ocorrer um erro, exiba uma mensagem de erro
