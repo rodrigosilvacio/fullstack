@@ -1,5 +1,2 @@
-# fullstack
-
+# php com mysql
 # Projeto eCommerce de Cursos
-
-Facens Lab
